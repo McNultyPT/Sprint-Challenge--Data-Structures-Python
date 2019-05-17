@@ -26,7 +26,7 @@ I think O(n) because the algorithm has to allocate memory for the same number of
 
 7. What is the runtime complexity of your optimized code in `names.py`?
 
-I think it would be O(n^2) because it's iterating through two dictionaries.
+I think it would be O(2n) because it's checking through 2 dictionaries, and iterating through a dictionary is O(n).
 
 8. What is the space complexity of your optimized code in `names.py`?
 

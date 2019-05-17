@@ -20,18 +20,18 @@ f.close()
 # duplicates = [name for name in names_1 if name in names_2]
 
 duplicates = []
-name_1_dict = {}
-name_2_dict = {}
+dict_1 = {}
+dict_2 = {}
 
-for name_1 in names_1:
-    name_1_dict[name_1.replace(" ", "")] = name_1
+for name in names_1:
+    dict_1[name.replace(" ", "")] = name
 
-for name_2 in names_2:
-    name_2_dict[name_2.replace(" ", "")] = name_2
+for name in names_2:
+    dict_2[name.replace(" ", "")] = name
 
-for key in name_1_dict.keys():
-    if name_2_dict.get(key):
-        duplicates.append(name_1_dict.get(key))
+for name in dict_1.keys():
+    if dict_2.get(name):
+        duplicates.append(dict_1.get(name))
     
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")

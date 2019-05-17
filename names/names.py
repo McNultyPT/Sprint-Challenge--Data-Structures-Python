@@ -24,10 +24,10 @@ dict_1 = {}
 dict_2 = {}
 
 for name in names_1:
-    dict_1[name.replace(" ", "")] = name
+    dict_1[name] = name
 
 for name in names_2:
-    dict_2[name.replace(" ", "")] = name
+    dict_2[name] = name
 
 for name in dict_1.keys():
     if dict_2.get(name):
